@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Only for a visible skip link */
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+    }
+
+    .skip:focus {
+      left: 1rem;
+      top: 1rem;
+      background: #000;
+      color: #fff;
+      padding: .5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip</a>
+
+  <header>
+    <div class="logo">My Blog</div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main id="main">
+      <article>
+        <header>
+          <h1>The Joy of Semantics</h1>
+          <p>By Jane Doe • Posted 2 Sept 2025</p>
+        </header>
+
+        <figure>
+          <img src="hero.jpg" alt="">
+        </figure>
+
+        <section>
+          <p>HTML provides elements that convey meaning…</p>
+          <p>Using the right tags improves accessibility and SEO…</p>
+        </section>
+
+        <blockquote>
+          <p>“Good markup is invisible, but invaluable.”</p>
+        </blockquote>
+
+        <section aria-labelledby="related-heading">
+          <h2 id="related-heading">Related</h2>
+          <ul>
+            <li>
+              <article>
+                <h3><a href="#">Why headings matter</a></h3>
+                <p>A quick primer on h1–h6</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3><a href="#">Landmarks 101</a></h3>
+                <p>header, nav, main…</p>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <section class="search">
+        <h2>Search</h2>
+        <form action="#" method="get">
+          <label for="search-input">Search</label>
+          <input id="search-input" type="text" name="q" placeholder="Find…">
+          <button type="submit">Go</button>
+        </form>
+      </section>
+
+      <section class="about-widget">
+        <h2>About this site</h2>
+        <p>We publish web standards tips weekly.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </nav>
+    <p>Contact: info@example.com</p>
+  </footer>
+</body>
+
+</html>
