@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Only for a visible skip link in your refactor */
+        .skip {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+        }
+
+        .skip:focus {
+            left: 1rem;
+            top: 1rem;
+            background: #000;
+            color: #fff;
+            padding: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="skip-link"><a class="skip" href="#main">Skip</a></div>
+
+    <div class="header">
+        <div class="logo">My Blog</div>
+        <div class="menu">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Articles</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="title">The Joy of Semantics</div>
+            <div class="meta">By Jane Doe • Posted 2 Sept 2025</div>
+            <div class="image"><img src="hero.jpg"></div>
+            <div class="text">
+                <div>HTML provides elements that convey meaning…</div>
+                <div>Using the right tags improves accessibility and SEO…</div>
+            </div>
+            <div class="quote">“Good markup is invisible, but invaluable.”</div>
+            <div class="related">
+                <div class="related-title">Related</div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-title"><a href="#">Why headings matter</a></div>
+                        <div class="card-desc">A quick primer on h1–h6</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title"><a href="#">Landmarks 101</a></div>
+                        <div class="card-desc">header, nav, main…</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="search">
+                <div>Search</div>
+                <div>
+                    <input type="text" placeholder="Find…">
+                    <button>Go</button>
+                </div>
+            </div>
+            <div class="about-widget">
+                <div>About this site</div>
+                <div>We publish web standards tips weekly.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="links">
+            <a href="#">Privacy</a> | <a href="#">Terms</a>
+        </div>
+        <div class="contact">Contact: info@example.com</div>
+    </div>
+</body>
+
+</html>
